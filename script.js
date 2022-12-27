@@ -109,7 +109,7 @@ function checkMatch() {
 
     // If the two cards are the same do the follwing 
     if (selection1.data("id") === selection2.data("id")) {
-        console.log("correct")
+        // console.log("correct")
             // Clear get2Cards so that we can run checkmatch again
         get2Cards = [];
         // disable the possibility for the user to reselect prior choices
@@ -152,7 +152,7 @@ function checkMatch() {
             get2Cards = []
             console.log(get2Cards);
         }, 500);
-        console.log("incorrect")
+        // console.log("incorrect")
             // get2Cards = [];
     }
 }
