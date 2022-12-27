@@ -68,7 +68,7 @@ function getGifs() {
         url: queryUrl
             //once the ajax call has loaded, then show the response
     }).then(function(response) {
-        console.log(response);
+        // console.log(response);
         //get 8x2 cards
         //create a loop that gets exactly 8 cards
         //make 2 copies of each of those 8 cards
@@ -89,7 +89,7 @@ function getGifs() {
         startGame();
         //BE SURE TO REMOVE THIS CONSOLE LOG. 
         //this shows the random 
-        console.log(imgURLs);
+        // console.log(imgURLs);
 
     });
 }
@@ -119,7 +119,7 @@ function checkMatch() {
         var isGameOver = true;
         for (var i = 0; i < imgURLs.length; i++) {
             if (imgURLs[i].id === selection1.data("id")) {
-                console.log(selection1.data("id"))
+                // console.log(selection1.data("id"))
                 imgURLs[i].matched = true
             }
             if (imgURLs[i].matched === false) {
@@ -150,7 +150,7 @@ function checkMatch() {
             selection2.find(".img-box").addClass("img-hide")
 
             get2Cards = []
-            console.log(get2Cards);
+            // console.log(get2Cards);
         }, 500);
         // console.log("incorrect")
             // get2Cards = [];
